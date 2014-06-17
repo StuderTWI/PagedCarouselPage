@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagedCarouselPage", "PagedCarouselPage\PagedCarouselPage.csproj", "{CBF65A2E-F9EF-415F-8FA7-907D93330A84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagedCarouselPage.iOS", "PagedCarouselPage.iOS\PagedCarouselPage.iOS.csproj", "{F75DD7B9-BBE6-4525-9401-697DD6E3DA34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF65A2E-F9EF-415F-8FA7-907D93330A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF65A2E-F9EF-415F-8FA7-907D93330A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF65A2E-F9EF-415F-8FA7-907D93330A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF65A2E-F9EF-415F-8FA7-907D93330A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75DD7B9-BBE6-4525-9401-697DD6E3DA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75DD7B9-BBE6-4525-9401-697DD6E3DA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75DD7B9-BBE6-4525-9401-697DD6E3DA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75DD7B9-BBE6-4525-9401-697DD6E3DA34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PagedCarouselPage\PagedCarouselPage.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+
+src/packages/*
+
+src/PagedCarouselPage.iOS/bin/*
+
+src/PagedCarouselPage/bin/*
+
+src/PagedCarouselPage/obj/*
+
+src/PagedCarouselPage.userprefs
