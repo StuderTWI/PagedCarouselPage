@@ -4,28 +4,34 @@ using System.ComponentModel;
 using Xamarin.Forms;
 using CaveBirdLabs.Forms;
 using CaveBirdLabs.Forms.Platform.iOS;
+using MonoTouch.UIKit;
+using System.Drawing;
 
-[assembly:ExportRendererAttribute(typeof(PagedCarouselPage), typeof(PagedCarouselPageRenderer))]
+
+[assembly:ExportRendererAttribute(typeof(CxPagedCarouselPage), typeof(CxPagedCarouselPageRenderer))]
 
 namespace CaveBirdLabs.Forms.Platform.iOS
 {
-	public class PagedCarouselPageRenderer : CarouselPageRenderer
+	public class CxPagedCarouselPageRenderer : CarouselPageRenderer
 	{
-		public PagedCarouselPageRenderer ()
+		public CxPagedCarouselPageRenderer ()
 		{
 		}
+
+		UILabel label;
 
 		protected override void OnElementChanged (VisualElementChangedEventArgs e)
 		{
 			base.OnElementChanged (e);
 
-			var page = e.NewElement as PagedCarouselPage;
+			var page = e.NewElement as CxPagedCarouselPage;
 			var view = NativeView;
 
-//			label = new UILabel (new RectangleF (20, 40, view.Frame.Width - 40, 40));
-//			label.AdjustsFontSizeToFitWidth = true;
-//			label.TextColor = UIColor.White;
-//			view.Add (label);
+			label = new UILabel (new RectangleF (20, 40, view.Frame.Width - 40, 40));
+			label.AdjustsFontSizeToFitWidth = true;
+			label.TextColor = UIColor.White;
+			label.Text = "my renderer";
+			view.Add (label);
 
 			page.PropertyChanged += OnPropertyChanged;
 
@@ -43,4 +49,3 @@ namespace CaveBirdLabs.Forms.Platform.iOS
 
 	}
 }
-

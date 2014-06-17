@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace CaveBirdLabs.Forms
 {
-	public class PagedCarouselPage : CarouselPage
+	public class CxPagedCarouselPage : CarouselPage
 	{
 
 	}
