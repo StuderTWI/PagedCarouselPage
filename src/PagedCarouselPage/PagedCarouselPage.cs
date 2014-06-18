@@ -10,6 +10,15 @@ namespace CaveBirdLabs.Forms
 	public class CxPagedCarouselPage : CarouselPage
 	{
 
+		public static readonly BindableProperty IsPagerVisibleProperty =
+			BindableProperty.Create<CxPagedCarouselPage,bool> (
+				p => p.IsPagerVisible, true);
+ 
+		public bool IsPagerVisible {
+			get { return (bool)GetValue (IsPagerVisibleProperty); }
+			set { SetValue (IsPagerVisibleProperty, value); }
+		}
+
 	}
 }
 
