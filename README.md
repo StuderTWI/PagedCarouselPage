@@ -6,8 +6,10 @@ Purpose of this project is to add a UIPageControl to the CarouselPage component 
 Features to implement
 ---------------------
 
-* PageControl visible or not
-* PageItemColor
-* SelectedPageItemColor
-* PositionFromBottom : how many from bottom shld the control be (or absolute position)
+* IsPagerVisible
+* PagerItemColor
+* SelectedPagerItemColor
+* PagerPadding
+* PagerXAlign
+* PagerYAlign
 
