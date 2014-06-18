@@ -27,8 +27,6 @@ namespace PagedCarouselPage.Sample.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			Forms.Init();
-
-			// HACK: this is needed for the Renderers in the library to load (remove this and the renderer is not loaded)
 			Renderers.Init();
 
 			// create a new window instance based on the screen size

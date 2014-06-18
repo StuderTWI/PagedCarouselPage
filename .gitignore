@@ -18,3 +18,9 @@ sample/PagedCarousePage.Sample/obj/*
 src/PagedCarouselPage.iOS/obj/*
 
 *.suo
+
+sample/PagedCarouselPage.Sample.Android/bin/*
+
+sample/PagedCarouselPage.Sample.Android/obj/*
+src/PagedCarouselPage.Android/bin/*
+src/PagedCarouselPage.Android/obj/*
