@@ -7,9 +7,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle ("PagedCarousePage.Sample")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany("CaveBirdLabs")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("Stefan")]
+[assembly: AssemblyCopyright("CaveBirdLabs")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

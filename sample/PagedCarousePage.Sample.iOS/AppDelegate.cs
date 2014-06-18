@@ -1,33 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿#region Usings
+
+using CaveBirdLabs.Forms.Platform.iOS;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+
 using Xamarin.Forms;
-using CaveBirdLabs.Forms.Platform.iOS;
+
+#endregion
 
 namespace PagedCarouselPage.Sample.iOS
 {
-	[Register ("AppDelegate")]
+	[Register("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
 		// class-level declarations
-		UIWindow window;
 
-		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
+		#region Declarations
+
+		private UIWindow _window;
+
+		#endregion
+
+		#region Public Methods
+
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			Forms.Init();
 
 			// HACK: this is needed for the Renderers in the library to load (remove this and the renderer is not loaded)
-			CaveBirdLabs.Forms.Platform.iOS.Renderers.Init ();
+			Renderers.Init();
 
 			// create a new window instance based on the screen size
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
-			window.RootViewController =  App.GetMainPage().CreateViewController();
-			window.MakeKeyAndVisible ();
-			
+			_window = new UIWindow(UIScreen.MainScreen.Bounds);
+			_window.RootViewController = App.GetMainPage().CreateViewController();
+			_window.MakeKeyAndVisible();
+
 			return true;
 		}
+
+		#endregion
 	}
 }
