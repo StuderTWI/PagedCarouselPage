@@ -14,3 +14,7 @@ sample/PagedCarousePage.Sample.iOS/bin/*
 sample/PagedCarousePage.Sample.iOS/obj/*
 sample/PagedCarousePage.Sample/bin/*
 sample/PagedCarousePage.Sample/obj/*
+
+src/PagedCarouselPage.iOS/obj/*
+
+*.suo
