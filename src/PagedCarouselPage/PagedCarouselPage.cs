@@ -13,17 +13,12 @@ namespace CaveBirdLabs.Forms
 		public static readonly BindableProperty IsPagerVisibleProperty =
 			BindableProperty.Create<CxPagedCarouselPage,bool> (
 				p => p.IsPagerVisible, true);
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> FETCH_HEAD
 		public bool IsPagerVisible {
 			get { return (bool)GetValue (IsPagerVisibleProperty); }
 			set { SetValue (IsPagerVisibleProperty, value); }
 		}
 
-<<<<<<< HEAD
 		public static readonly BindableProperty PagerItemColorProperty =
 			BindableProperty.Create<CxPagedCarouselPage,Color> (
 				p => p.PagerItemColor, Color.Default);
@@ -56,12 +51,8 @@ namespace CaveBirdLabs.Forms
 				p => p.PagerXAlign, TextAlignment.Center);
 
 		public TextAlignment PagerXAlign {
-			get {
-				return (TextAlignment)base.GetValue (PagerXAlignProperty);
-			}
-			set {
-				base.SetValue (PagerXAlignProperty, value);
-			}
+			get { return (TextAlignment)base.GetValue (PagerXAlignProperty); }
+			set { base.SetValue (PagerXAlignProperty, value); }
 		}
 
 		public static readonly BindableProperty PagerYAlignProperty =
@@ -69,16 +60,10 @@ namespace CaveBirdLabs.Forms
 				p => p.PagerYAlign, TextAlignment.End);
 
 		public TextAlignment PagerYAlign {
-			get {
-				return (TextAlignment)base.GetValue (PagerYAlignProperty);
-			}
-			set {
-				base.SetValue (PagerYAlignProperty, value);
-			}
+			get { return (TextAlignment)base.GetValue (PagerYAlignProperty); }
+			set { base.SetValue (PagerYAlignProperty, value); }
 		}
 
-=======
->>>>>>> FETCH_HEAD
 	}
 }
 
