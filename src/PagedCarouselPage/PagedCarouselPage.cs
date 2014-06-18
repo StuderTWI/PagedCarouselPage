@@ -13,12 +13,17 @@ namespace CaveBirdLabs.Forms
 		public static readonly BindableProperty IsPagerVisibleProperty =
 			BindableProperty.Create<CxPagedCarouselPage,bool> (
 				p => p.IsPagerVisible, true);
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> FETCH_HEAD
 		public bool IsPagerVisible {
 			get { return (bool)GetValue (IsPagerVisibleProperty); }
 			set { SetValue (IsPagerVisibleProperty, value); }
 		}
 
+<<<<<<< HEAD
 		public static readonly BindableProperty PagerItemColorProperty =
 			BindableProperty.Create<CxPagedCarouselPage,Color> (
 				p => p.PagerItemColor, Color.Default);
@@ -72,6 +77,8 @@ namespace CaveBirdLabs.Forms
 			}
 		}
 
+=======
+>>>>>>> FETCH_HEAD
 	}
 }
 
