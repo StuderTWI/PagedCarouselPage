@@ -19,10 +19,11 @@ namespace PagedCarouselPage.Sample
 				{
 					new ContentPage {Content = new BoxView {Color = new Color(1, 0, 0)}},
 					new ContentPage {Content = new BoxView {Color = new Color(0, 1, 0)}},
+					new ContentPage {Content = new BoxView {Color = new Color(0, 1, 1)}}
 				},
 				PagerYAlign = TextAlignment.End,
-				PagerXAlign = TextAlignment.Start,
-				PagerPadding = new Thickness(50, 0, 120, 0)
+				PagerXAlign = TextAlignment.Center,
+				PagerPadding = new Thickness(0, 0, 0, 0)
 
 			};
 
