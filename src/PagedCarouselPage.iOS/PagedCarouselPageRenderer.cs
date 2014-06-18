@@ -35,7 +35,8 @@ namespace CaveBirdLabs.Forms.Platform.iOS
 			_label.Text = "My Rendered Is Used";
 			view.Add (_label);
 
-
+			_pageControl = new UIPageControl ();
+			view.Add (_pageControl);
 
 			page.PropertyChanged += OnPropertyChanged;
 
@@ -44,17 +45,17 @@ namespace CaveBirdLabs.Forms.Platform.iOS
 		private void OnPropertyChanged (object sender, PropertyChangedEventArgs e)
 		{
 			switch (e.PropertyName) {
-			case CxPagedCarouselPage.IsPagerVisibleProperty.PropertyName:
+			case "IsPagerVisible":
 				break;
-			case CxPagedCarouselPage.PagerItemColorProperty.PropertyName:
+			case "PagerItemColor":
 				break;
-			case CxPagedCarouselPage.SelectedPagerItemColorProperty.PropertyName:
+			case "SelectedPagerItemColor":
 				break;	
-			case CxPagedCarouselPage.PagerPaddingProperty.PropertyName:
+			case "PagerPadding":
 				break;
-			case CxPagedCarouselPage.PagerXAlignProperty.PropertyName:
+			case "PagerXAligny":
 				break;
-			case CxPagedCarouselPage.PagerYAlignProperty.PropertyName:
+			case "PagerYAlign":
 				break;
 			}
 		}
