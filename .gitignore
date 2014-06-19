@@ -24,3 +24,10 @@ sample/PagedCarouselPage.Sample.Android/bin/*
 sample/PagedCarouselPage.Sample.Android/obj/*
 src/PagedCarouselPage.Android/bin/*
 src/PagedCarouselPage.Android/obj/*
+sample/PagedCarousePage.Sample.WindowsPhone/Bin/*
+sample/PagedCarousePage.Sample.WindowsPhone/Obj/*
+src/PagedCarouselPage.WindowsPhone/Bin/*
+src/PagedCarouselPage.WindowsPhone/Obj/*
+src/PagedCarouselPage.WindowsPhone/PagedCarouselPage.WindowsPhone.csproj.user
+
+sample/PagedCarousePage.Sample.WindowsPhone/PagedCarousePage.Sample.WindowsPhone.csproj.user

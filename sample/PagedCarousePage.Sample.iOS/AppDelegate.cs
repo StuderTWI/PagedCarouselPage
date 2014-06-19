@@ -14,7 +14,6 @@ namespace PagedCarouselPage.Sample.iOS
 	[Register("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		// class-level declarations
 
 		#region Declarations
 
