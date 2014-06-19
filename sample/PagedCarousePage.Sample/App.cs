@@ -23,7 +23,7 @@ namespace PagedCarouselPage.Sample
 				},
 				PagerYAlign = TextAlignment.End,
 				PagerXAlign = TextAlignment.Center,
-				PagerPadding = new Thickness(0, 0, 0, 0)
+				PagerPadding = new Thickness(0, 0, 0,20)
 
 			};
 
