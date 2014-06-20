@@ -126,4 +126,34 @@
       <Name>PagedCarouselPage.Sample</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro1background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro1background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro2background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro2background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro3background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro3background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro4background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro4background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro5background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\intro5background%402x.png" />
+  </ItemGroup>
 </Project>

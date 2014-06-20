@@ -35,24 +35,26 @@ namespace CaveBirdLabs.Forms.Platform.Android
 
 		#region Event Handlers
 
-		private void OnPagedCarouselPagePropertyChanged(object sender, PropertyChangedEventArgs e)
+		protected override void OnElementPropertyChanged (object sender, PropertyChangedEventArgs e)
 		{
+			base.OnElementPropertyChanged (sender, e);
+
 			switch (e.PropertyName)
 			{
-				case "IsPagerVisible":
-					_viewPager.Visibility = _pagedCarouselPage.IsPagerVisible ? ViewStates.Visible : ViewStates.Gone;
-					break;
-				case "PagerItemColor":
-					SetPageIndicatorTintColor();
-					break;
-				case "SelectedPagerItemColor":
-					SetCurrentPageIndicatorTintColor();
-					break;
-				case "PagerPadding":
-				case "PagerXAlign":
-				case "PagerYAlign":
-					LayoutPageControl();
-					break;
+			case "IsPagerVisible":
+				_viewPager.Visibility = _pagedCarouselPage.IsPagerVisible ? ViewStates.Visible : ViewStates.Gone;
+				break;
+			case "PagerItemColor":
+				SetPageIndicatorTintColor();
+				break;
+			case "SelectedPagerItemColor":
+				SetCurrentPageIndicatorTintColor();
+				break;
+			case "PagerPadding":
+			case "PagerXAlign":
+			case "PagerYAlign":
+				LayoutPageControl();
+				break;
 			}
 		}
 
@@ -121,13 +123,6 @@ namespace CaveBirdLabs.Forms.Platform.Android
 
 		#region Protected Methods
 
-		protected override void Dispose(bool disposing)
-		{
-			base.Dispose(disposing);
-			if (disposing)
-				_pagedCarouselPage.PropertyChanged -= OnPagedCarouselPagePropertyChanged;
-		}
-
 		protected override void OnAttachedToWindow()
 		{
 			base.OnAttachedToWindow();
@@ -156,10 +151,12 @@ namespace CaveBirdLabs.Forms.Platform.Android
 			_circlePageIndicator = new CirclePageIndicator(base.Context);
 			_circlePageIndicator.SetPadding(5, 5, 5, 5);
 			_circlePageIndicator.Radius = 5*density;
+			SetPageIndicatorTintColor();
+			SetCurrentPageIndicatorTintColor();
+
 			AddView(_circlePageIndicator);
 			_circlePageIndicator.BringToFront();
 
-			_pagedCarouselPage.PropertyChanged += OnPagedCarouselPagePropertyChanged;
 		}
 
 		protected override void OnLayout(bool changed, int l, int t, int r, int b)

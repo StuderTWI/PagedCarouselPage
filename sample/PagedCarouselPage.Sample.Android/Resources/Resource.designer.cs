@@ -267,6 +267,21 @@ namespace PagedCarouselPage.Sample.Android
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int intro1background = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int intro2background = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int intro3background = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int intro4background = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int intro5background = 2130837509;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
